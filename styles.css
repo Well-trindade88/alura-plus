@@ -26,6 +26,7 @@ body {
     background-size: contain;
     align-items: center;
     text-align: center;
+    margin: 0 0;
 }
 
 .container {
@@ -97,6 +98,7 @@ body {
 
 .descricao__texto {
     color: var(--cinza-secundario);
+    padding-bottom: 1em;
 }
 
 .secundario__botao {
@@ -143,7 +145,7 @@ body {
     justify-content: center;
     list-style-type: none;
     margin-top: 1em;
-    padding-bottom: 1em;
+    padding-bottom: 3em;
 }
 
 .lista__link a{
@@ -168,31 +170,43 @@ body {
     color: var(--cinza-secundario);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .container {
-        display: block;
+        display: flex;
+        flex-direction: column; 
     }
 
     .primario {
-        height: 50vh;
-        margin: 0;
+        margin: 0 0;
+        padding: 1em;
+        height: auto; 
     }
-
-    .container__imagem {
-        width: 50%;
-    }
-
+    
     .container__caixa {
-        margin: 2em 2em;
+        margin: 0;
+        padding: 0;
+        background-image: url('img/Background\ 1.png'); 
+        background-repeat: no-repeat;
+        background-size: contain; 
+        background-position: top center;
+        padding-top: 300px; 
     }
 
     .container__secundario {
+        display: flex;
+    }
+
+    .container__descricao {
+        padding: 1em 0;
+    }
+
+    .container:nth-child(3) {
         display: flex;
         flex-direction: column-reverse;
     }
 
     .secundario {
-        margin: 2em 2em;
+        margin: 1em;
         text-align: center;
     }
 
@@ -211,6 +225,7 @@ body {
 
     .dispositivos {
         display: block;
+        margin: 1em;
     }
 
     .dispositivos__titulo {
@@ -220,7 +235,7 @@ body {
 
     .lista__link {
         padding-bottom: 1em;
-        font-size: 8px;
+        font-size: 16px;
     }
 
     .lista__item {
@@ -236,9 +251,14 @@ body {
     .rodape__texto {
         margin: 1em 0;
         color: var(--cinza-secundario);
-        font-size: 8px;
+        font-size: 12px;
         padding-bottom: 0.5em;
     }
     
+    .rodape {
+        margin: 1em;
+    }
 }
+
+
 
