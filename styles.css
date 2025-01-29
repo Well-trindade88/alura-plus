@@ -185,11 +185,11 @@ body {
     .container__caixa {
         margin: 0;
         padding: 0;
-        background-image: url('img/Background\ 1.png'); 
+        background-image: url('img/Background\ 1.png')  no-repeat; 
         background-repeat: no-repeat;
         background-size: contain; 
         background-position: top center;
-        padding-top: 300px; 
+        padding-top: 150px; 
     }
 
     .container__secundario {
